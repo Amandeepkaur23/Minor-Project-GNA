@@ -12,7 +12,7 @@ fetch(urlIPv4).then(function (response) {
   document.getElementById('ip-address').innerHTML = "My Pubilic Ip: <br>" + data.ip;
   console.log(data);
   
-  const urlForMoreInfo = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_WMETjCzFuUOyb3acca4XX1nCzTULj&ipAddress=${data.ip}`;
+  const urlForMoreInfo = `https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_FpKvMGKIja9WSy9r5DoCwxFuIWUJe&ipAddress=${data.ip}`;
   let information;
 
   fetch(urlForMoreInfo).then(function(response){
