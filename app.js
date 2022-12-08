@@ -51,9 +51,9 @@ app.post('/', (req, res)=>{
     userInfo.save()
     .then((result)=> {
         console.log("Data Saved: " + result);
-        mongoose.connection.close(function () {
-            console.log('Mongoose disconnected on app termination');
-        }); 
+        // mongoose.connection.close(function () {
+        //     console.log('Mongoose disconnected on app termination');
+        // }); 
     })
     .catch((err)=>console.log(err));
 
